@@ -69,7 +69,7 @@ include 'nav.php';
                     <td><?= $row['role']; ?></td>
                     <td>
                         <!-- Tombol Edit Data -->
-                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?= $row['id_user']; ?>" <?= ($row['id_user'] == 1) ? 'disabled' : ''; ?>><i class="fa fa-pencil"></i>
+                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?= $row['id_user']; ?>" <?= ($row['id_user'] == 1) ? 'disabled' : ''; ?> <?= ($row['role'] == 'admin' ) ? 'disabled' : ''; ?>><i class="fa fa-pencil"></i>
                             Edit
                         </button>
 
@@ -130,7 +130,7 @@ include 'nav.php';
 </div>
 
 <!-- Tombol Hapus Data -->
-<button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal<?= $row['id_user']; ?>" <?= ($row['id_user'] == 1) ? 'disabled' : ''; ?>><i class="fa fa-trash"></i>
+<button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal<?= $row['id_user']; ?>" <?= ($row['id_user'] == 1) ? 'disabled' : ''; ?> <?= ($row['role'] == 'admin' ) ? 'disabled' : ''; ?>><i class="fa fa-trash"></i>
     Hapus
 </button>
 
@@ -222,15 +222,8 @@ include 'nav.php';
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    var nav = document.querySelector('nav');
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 100) {
-            nav.classList.add('bg-dark', 'shadow');
-        } else {
-            nav.classList.remove('bg-dark', 'shadow');
-        }
-    });
-</script>
 </body>

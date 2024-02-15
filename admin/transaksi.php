@@ -38,6 +38,11 @@ include 'nav.php';
                 '</div>';
             unset($_SESSION['editTransaksi']);
         }
+        //  elseif (isset($_SESSION['deleteTransaksiError'])) {
+        //     echo '<div class="alert alert-danger" role="alert">'
+        //     . $_SESSION['deleteTransaksiError'] .
+        //     '</div>';
+        // }
         ?>
 
     <table class="table mt-4" id="tableData">
@@ -88,7 +93,7 @@ include 'nav.php';
                     <td><?= $row['nama_user']; ?></td>
                     <td>
                         <!-- Tombol Edit Data -->
-                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?= $row['id_transaksi']; ?>"><i class="fa fa-pencil"></i>
+                        <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?= $row['id_transaksi']; ?> "><i class="fa fa-pencil"></i>
                             Edit
                         </button>
 
@@ -350,16 +355,6 @@ include 'nav.php';
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script>
-    var nav = document.querySelector('nav');
 
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 100) {
-            nav.classList.add('bg-dark', 'shadow');
-        } else {
-            nav.classList.remove('bg-dark', 'shadow');
-        }
-    });
-</script>
 
 </body>

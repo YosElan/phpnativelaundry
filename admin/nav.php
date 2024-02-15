@@ -45,13 +45,13 @@
               <a class="nav-link text-white" href="home.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="data.php">Data</a>
+              <a class="nav-link text-white" href="data.php">Outlet</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="user.php">User</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="member.php">Management</a>
+              <a class="nav-link text-white" href="member.php">Member</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="paket.php">Paket</a>
@@ -70,14 +70,14 @@
       </div>
     </nav>
   </header>
-  <script src="../assets/js/bootstrap.bundle.js"></script>
+  <!-- <script src="../assets/js/bootstrap.bundle.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/bootstrap.bundle.min.js.map"></script>
   <script src="../assets/js/bootstrap.esm.js"></script>
   <script src="../assets/js/bootstrap.esm.js.map"></script>
   <script src="../assets/js/bootstrap.esm.min.js"></script>
-  <script src="../assets/js/bootstrap.esm.min.js.map"></script>
+  <script src="../assets/js/bootstrap.esm.min.js.map"></script> -->
   <script src="../assets/js/bootstrap.js"></script>
-  <script src="../assets/js/bootstrap.js.map"></script>
+  <!-- <script src="../assets/js/bootstrap.js.map"></script> -->
   <script src="../assets/js/bootstrap.min.js"></script>
-  <script src="../assets/js/bootstrap.min.js.map"></script>
+  <!-- <script src="../assets/js/bootstrap.min.js.map"></script> -->
